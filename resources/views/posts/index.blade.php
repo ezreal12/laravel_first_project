@@ -9,6 +9,14 @@
         <button type="submit">Search</button>
         
     </form>
+    <form method="POST" action="{{ route('logout') }}">
+        @csrf
+
+        <button type="submit">
+            {{ __('Logout') }}
+        </button>
+    </form>
+
     <button onclick="location.href='{{ url('posts') }}/create';">Create</button>
     <ul>
         @foreach ($posts as $post)
