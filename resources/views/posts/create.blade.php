@@ -4,7 +4,7 @@
 
 <h2>게시글 작성</h2>
 
-<form action="/posts" method="POST">
+<form action="/posts/store" method="POST">
   @csrf
   <label for="title">제목:</label><br>
   <input type="text" id="title" name="title" value=""><br>
